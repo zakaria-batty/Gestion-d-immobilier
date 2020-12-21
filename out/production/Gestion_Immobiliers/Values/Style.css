@@ -1,0 +1,42 @@
+.search-box{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 99;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 17;
+}
+.right-bar{
+    -fx-background-color:#D3D3D3;
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1),10.0, 0.0, 0.0, 10.0);
+}
+.box-card{
+    -fx-background-color: #f16c31;
+    -fx-background-radius: 17;
+}
+.borderpane{
+    -fx-background-color: #f16c31;
+}
+.box-cardV{
+    -fx-background-color: #c3bfbf;
+}
+.box-card2{
+    -fx-background-color: #ffff;
+    //-fx-background-radius: 17;
+}
+.comboBox{
+    -fx-background-color: rgb(214, 214, 217);
+    -fx-background-radius: 30;
+}
+.btn-book{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 80;
+}
+

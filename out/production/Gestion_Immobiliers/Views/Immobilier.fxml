@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="521.0" prefWidth="977.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ImmobilierController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="593.0" prefWidth="976.0">
+         <children>
+            <BorderPane layoutX="-2.0" prefHeight="521.0" prefWidth="984.0" styleClass="borderpane" stylesheets="@../Values/Style.css">
+               <left>
+                  <VBox prefHeight="509.0" prefWidth="261.0" stylesheets="@../Values/Style.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="51.0" prefWidth="261.0">
+                           <children>
+                              <Label text="D'immobiliers" textFill="#00000087">
+                                 <font>
+                                    <Font name="Cambria" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="212.0" stylesheets="@../Values/Style.css">
+                           <children>
+                              <TextField prefHeight="27.0" prefWidth="127.0" styleClass="transparent" stylesheets="@../Values/Style.css" text="Type here to search">
+                                 <font>
+                                    <Font name="Cambria" size="11.0" />
+                                 </font>
+                              </TextField>
+                              <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="59.0" styleClass="search-button" stylesheets="@../Values/Style.css" text="search" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" right="30.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="search-box" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </HBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="290.0" prefWidth="205.0" styleClass="box-card" stylesheets="@../Values/Style.css">
+                           <VBox.margin>
+                              <Insets left="25.0" right="18.0" top="28.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="38.0" prefWidth="181.0">
+                                 <children>
+                                    <Label text="Apartment" textFill="#00000078">
+                                       <font>
+                                          <Font name="Cambria" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="27.0" prefWidth="181.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="109.0" text="Nighty Price" textFill="WHITE" />
+                                    <Label prefHeight="17.0" prefWidth="33.0" text="30$" textFill="WHITE" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <ImageView fitHeight="107.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../img/s1.jpg" />
+                                 </image>
+                              </ImageView>
+                              <HBox alignment="CENTER" prefHeight="41.0" prefWidth="181.0">
+                                 <children>
+                                    <Label text="Number of days   " textFill="WHITE" />
+                                    <ComboBox prefHeight="29.0" prefWidth="73.0" promptText="1" styleClass="comboBox" stylesheets="@../Values/Style.css" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="43.0" prefWidth="189.0">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" styleClass="btn-book" stylesheets="@../Values/Style.css" text="Book Now">
+                                       <font>
+                                          <Font name="Cambria" size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="5.0" right="5.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="71.0" prefWidth="261.0">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="39.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-linkedin-64.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="39.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-instagram-64.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="39.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8-facebook-64.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="right-bar" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox prefHeight="521.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="657.0" styleClass="box-card2">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <Label prefHeight="23.0" prefWidth="103.0" text="  Language" textFill="#00000078">
+                                 <font>
+                                    <Font name="Cambria" size="16.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox id="#Button" prefHeight="15.0" prefWidth="92.0" promptText="English" stylesheets="@../Values/Style.css" />
+                              <HBox alignment="CENTER" prefHeight="60.0" prefWidth="389.0" />
+                              <Label prefHeight="23.0" prefWidth="103.0" text="My Account" textFill="#00000078">
+                                 <font>
+                                    <Font name="Cambria" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="234.0" prefWidth="716.0">
+                           <VBox.margin>
+                              <Insets top="35.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="259.0" prefWidth="230.0" stylesheets="@../Values/Style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="181.0">
+                                       <children>
+                                          <Label text="Apartment" textFill="#00000078">
+                                             <font>
+                                                <Font name="Cambria" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="4.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="27.0" prefWidth="181.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="126.0" text="Apartment for sale" textFill="WHITE" />
+                                          <Label prefHeight="18.0" prefWidth="48.0" text="30000$" textFill="WHITE" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/3.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox alignment="CENTER" prefHeight="41.0" prefWidth="181.0">
+                                       <children>
+                                          <Label text="City : Youssoufia" textFill="#242020b3" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="43.0" prefWidth="189.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" styleClass="btn-book" stylesheets="@../Values/Style.css" text="Book Now">
+                                             <font>
+                                                <Font name="Cambria" size="13.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="20.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="box-card2" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="259.0" prefWidth="230.0" stylesheets="@../Values/Style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="181.0">
+                                       <children>
+                                          <Label text="Villa" textFill="#00000078">
+                                             <font>
+                                                <Font name="Cambria" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="4.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="27.0" prefWidth="181.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="126.0" text="Villa for sale" textFill="WHITE" />
+                                          <Label prefHeight="18.0" prefWidth="48.0" text="45000$" textFill="WHITE" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <ImageView fitHeight="124.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/v1.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox alignment="CENTER" prefHeight="41.0" prefWidth="181.0">
+                                       <children>
+                                          <Label text="City : El jadida" textFill="#6b6868db" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="43.0" prefWidth="189.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" styleClass="btn-book" stylesheets="@../Values/Style.css" text="Book Now">
+                                             <font>
+                                                <Font name="Cambria" size="13.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="box-card2" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="259.0" prefWidth="230.0" stylesheets="@../Values/Style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="181.0">
+                                       <children>
+                                          <Label text="Apartment" textFill="#00000078">
+                                             <font>
+                                                <Font name="Cambria" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="4.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="27.0" prefWidth="181.0">
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="126.0" text="Apartment for sale" textFill="WHITE" />
+                                          <Label prefHeight="18.0" prefWidth="48.0" text="30000$" textFill="WHITE" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <ImageView fitHeight="123.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox alignment="CENTER" prefHeight="41.0" prefWidth="181.0">
+                                       <children>
+                                          <Label text="City : casablanca" textFill="#242121bc" />
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="43.0" prefWidth="189.0" stylesheets="@../Values/Style.css">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" styleClass="btn-book" stylesheets="@../Values/Style.css" text="Book Now">
+                                             <font>
+                                                <Font name="Cambria" size="13.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="10.0" />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="box-card2" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </VBox>
+                              <ScrollBar orientation="VERTICAL">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ScrollBar>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="77.0" prefWidth="723.0" />
+                        <HBox prefHeight="82.0" prefWidth="723.0" stylesheets="@../Values/Style.css">
+                           <styleClass>
+                              <String fx:value="right-bar" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
